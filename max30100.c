@@ -503,7 +503,7 @@ esp_err_t max30100_set_pulse_max_threshold(max30100_config_t* this, uint16_t pul
     return ESP_OK;
 }
 
-esp_err_t max330100_read_temperature(max30100_config_t* this, float* temperature) {
+esp_err_t max30100_read_temperature(max30100_config_t* this, float* temperature) {
     uint8_t current_mode_reg;
     //Tratar erros
     esp_err_t ret = max30100_read_register( this,
